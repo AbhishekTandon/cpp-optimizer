@@ -123,7 +123,7 @@ PHPS				=	$(wildcard *.php)
 all:					${OBJECTS} ${EXTENSION}
 
 ${EXTENSION}:			${OBJECTS}
-						${LINKER} ${LINKER_FLAGS} -o $@ ${OBJECTS} ${LINKER_DEPENDENCIES}
+						${LINKER} ${LINKER_FLAGS} -o $@ ${OBJECTS} 
 
 ${OBJECTS}:				${HEADERS} ${SOURCES}
 						${COMPILER} ${COMPILER_FLAGS} $@ ${@:%.o=%.cpp}

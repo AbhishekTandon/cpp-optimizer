@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int mainxxx() {
 	auto str = "Hello World with optimizer";
 	cout << str << endl; // prints !!!Hello World!!!
 	return 0;

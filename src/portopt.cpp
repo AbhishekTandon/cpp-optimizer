@@ -74,8 +74,10 @@ void frontierTest(const vector<vector<float>> rows, vector<float> benchmark)
 	}
 }
 
-int main2()
+int main()
 {
+	auto str = "Starting  optimizer";
+	cout << str << endl;
 	auto path = R"(\\hptblsrv03\Common\IT\HfinOne\samplePortfolio\dowComponents.tsv)";
 	cout << "reading " << path << "\n";
 	const auto rows = ReadMatrix(path);
